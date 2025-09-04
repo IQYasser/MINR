@@ -44,6 +44,7 @@
             button13 = new Button();
             button14 = new Button();
             button15 = new Button();
+            button16 = new Button();
             SuspendLayout();
             // 
             // textBox1
@@ -192,6 +193,7 @@
             button14.TabIndex = 14;
             button14.Text = "=";
             button14.UseVisualStyleBackColor = true;
+            button14.Click += button14_Click;
             // 
             // button15
             // 
@@ -203,11 +205,23 @@
             button15.UseVisualStyleBackColor = true;
             button15.Click += button15_Click;
             // 
+            // button16
+            // 
+            button16.BackColor = Color.Red;
+            button16.Location = new Point(275, 329);
+            button16.Name = "button16";
+            button16.Size = new Size(245, 45);
+            button16.TabIndex = 16;
+            button16.Text = "Delete";
+            button16.UseVisualStyleBackColor = false;
+            button16.Click += button16_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button16);
             Controls.Add(button15);
             Controls.Add(button14);
             Controls.Add(button13);
@@ -249,5 +263,6 @@
         private Button button13;
         private Button button14;
         private Button button15;
+        private Button button16;
     }
 }
