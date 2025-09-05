@@ -150,5 +150,11 @@ namespace MINR
 
             textBox1.Text = resultat.ToString();
         }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            if (!textBox1.Text.Contains(","))
+                textBox1.Text += ",";
+        }
     }
 }
